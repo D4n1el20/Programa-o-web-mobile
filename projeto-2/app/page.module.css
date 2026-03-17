@@ -59,7 +59,28 @@
   font-weight: 500;
   color: var(--text-primary);
 }
+.container {
+  display: flex;
+  
 
+}
+
+.sidebar {
+  width: 30%;
+  padding: 20px;
+  background-color: #AB2E3B;
+  color: white;
+}
+.divider {
+  width: 2px;
+  background-color: gray;
+}
+.content{
+  flex: 1;
+  padding: 20px;
+  color: black;
+  background-color: #f5f5f5;
+}
 .ctas {
   display: flex;
   flex-direction: row;
