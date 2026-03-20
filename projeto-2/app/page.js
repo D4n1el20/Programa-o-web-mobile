@@ -9,15 +9,34 @@ export default function page() {
         
           <div className={styles.container}>
             <div className={styles.sidebar}>
+          <Image
+  src="/Minha-Foto.jpeg"
+  alt="Foto de Daniel Costa"
+  width={150}
+  height={150}
+  className={styles.foto}
+/>
+<br></br>
           <h4>
-            Habilidades
+            Habilidades:
           </h4>
-          <p>
-            Inglês Intermediário
-          </p>
-          
-          <h4>Educação</h4>
-          <h4>Detalhes de Contato</h4>
+          <br></br>
+          <ul>
+            <li>Inglês intermediário;</li>
+            <li>Programação em pyhton;</li>
+            <li>Excel básico;</li>
+            <li>Programação em C;</li>
+            <li>Programação em java;</li>
+            <li>Programação Html.</li>
+            </ul>
+            <br></br>
+          <h4>Educação:</h4>
+          <p>Cursando Ciência da Computação na Universidade Católica de Penrambuco</p><br></br>
+
+          <h4>Detalhes de Contato:</h4><br></br><ul>
+          <li>E-mail: daniel1405costa@gmail.com</li>
+          <li>WhatsApp: 81 99344-2633</li>
+          </ul>
         </div>
         <div className={styles.divider}></div>
         <div className={styles.content}>
@@ -69,7 +88,7 @@ export default function page() {
           </h4>
           <br></br>
           <p>
-            Trabalho que fiz solicitado pelo professor da cadeira de Programação web e mobile. pode ser acessado clicando aqui(decidir se vai ser link ou botão)
+            Trabalho que fiz solicitado pelo professor da cadeira de Programação web e mobile. pode ser acessado clicando no botão jogar 
           </p>
           <br></br>
           </div>
