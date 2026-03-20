@@ -63,11 +63,12 @@
 .container {
   display: flex;
   width: 100%;
+}
 .foto {
   border-radius: 50%;
   object-fit: cover; /* evita deformar */
 }
-}
+
 .sidebar img {
   margin-bottom: 15px;
 }
