@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  text-align: center;
 }
 
 body {
@@ -38,13 +39,22 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.botaoVoltar {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+    
 }
 
+.botaoVoltar:hover {
+  background: #333;
+}
 
 .game {
   text-align: center;
@@ -55,25 +65,23 @@ body {
   box-shadow: 0 0 40px rgba(0,0,0,0.6);
 }
 
-
 .forca {
-  width: 120px;
-  margin: 20px auto;
+  width: 150px;
+  height: 200px;
+  margin: 10px auto;
 }
-
-.forca line,
-.forca circle {
-  stroke: #aaa;
+.forca line {
+  stroke: white;
   stroke-width: 2;
-  opacity: 0;
-  transition: 0.3s ease;
+}
+.boneco {
+  stroke: white;
+  stroke-width: 3;
+  fill: none;
 }
 
-.forca .show {
-  opacity: 1;
-}
 
-/* PALAVRA */
+
 .palavra {
   display: flex;
   justify-content: center;
@@ -88,7 +96,7 @@ body {
   text-align: center;
 }
 
-/* TECLADO */
+
 .teclado {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -121,7 +129,7 @@ body {
   opacity: 0.4;
 }
 
-/* STATUS */
+
 .ganhou {
   color: #2ecc71;
 }
@@ -130,7 +138,7 @@ body {
   color: #e74c3c;
 }
 
-/* BOTÃO */
+
 .reset {
   margin-top: 15px;
   padding: 10px 20px;
@@ -207,7 +215,7 @@ body {
 }
 .foto {
   border-radius: 50%;
-  object-fit: cover; /* evita deformar */
+  object-fit: cover; 
 }
 
 .sidebar img {
@@ -222,19 +230,21 @@ body {
 .botao {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #000000;
+  background-color: #971616;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   transition: 0.3s;
+  
 }
 
 .botao:hover {
-  background-color: #333333;
+  background-color: #ed4242;
+  
 }
 .divider {
   width: 2px;
-  background-color: gray;
+  background-color: rgb(237, 68, 68);
 }
 .content{
   flex: 1;

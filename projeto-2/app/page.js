@@ -34,7 +34,7 @@ export default function page() {
           <p>Cursando Ciência da Computação na Universidade Católica de Penrambuco</p><br></br>
 
           <h4>Detalhes de Contato:</h4><br></br><ul>
-          <li>E-mail: daniel1405costa@gmail.com</li>
+          <li>daniel1405costa@gmail.com</li>
           <li>WhatsApp: 81 99344-2633</li>
           </ul>
         </div>
