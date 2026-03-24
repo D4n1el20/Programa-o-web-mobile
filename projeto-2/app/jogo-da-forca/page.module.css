@@ -78,6 +78,19 @@
   background-color: #AB2E3B;
   color: white;
 }
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #333333;
+}
 .divider {
   width: 2px;
   background-color: gray;

@@ -16,7 +16,29 @@
   font-family: var(--font-geist-sans);
   background-color: var(--background);
 }
+.botao {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #000, #000);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 6px 0 #2e2d2d;
+  transition: all 0.2s ease;
+}
 
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #000;
+}
+
+.botao:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 white;
+}
 .main {
   display: flex;
   min-height: 100vh;
