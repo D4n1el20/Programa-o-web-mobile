@@ -91,9 +91,11 @@ export default function page() {
             Trabalho que fiz solicitado pelo professor da cadeira de Programação web e mobile. pode ser acessado clicando no botão jogar 
           </p>
           <br></br>
-          <Link href="/jogo-da-forca" className={styles.botao}>Jogar</Link>
+          <div className={styles.botaoContainer}><Link href="/jogo-da-forca" className={styles.botao}>Jogar</Link></div>
           </div>
+           
           </div>
+           
       </main>
   );
 }

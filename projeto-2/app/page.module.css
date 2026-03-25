@@ -28,8 +28,12 @@
   border: none;
   box-shadow: 0 6px 0 #2e2d2d;
   transition: all 0.2s ease;
+  margin-left: auto;
 }
-
+.botaoContainer {
+  display: flex;
+  justify-content: flex-end;
+}
 .botao:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 0 #000;
