@@ -84,11 +84,11 @@ export default function page() {
           </ul>
           <br></br>
           <h4>
-            Jogo da velha, Marcio Augusto Silva Bueno
+            Jogo da Forca, Marcio Augusto Silva Bueno
           </h4>
           <br></br>
           <p>
-            Trabalho que fiz solicitado pelo professor da cadeira de Programação web e mobile. pode ser acessado clicando no botão jogar 
+            Trabalho que fiz solicitado pelo professor da cadeira de Programação web e mobile. pode ser acessado clicando no botão jogar. 
           </p>
           <br></br>
           <div className={styles.botaoContainer}><Link href="/jogo-da-forca" className={styles.botao}>Jogar</Link></div>
