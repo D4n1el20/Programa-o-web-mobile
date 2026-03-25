@@ -74,8 +74,7 @@ export default function Page() {
       
       </div>
       <br></br>
-      <p className={styles.erros}>Erros: {erradas.length}/6</p>
-
+      <p className={styles.erros}>Erros: {erradas.length}/6</p><br></br>
       {(ganhou || perdeu) && (
         <div className={styles.fim}>
           <p>{ganhou ? "Você ganhou!!!" : `Perdeu, é uma pena... `}</p>
