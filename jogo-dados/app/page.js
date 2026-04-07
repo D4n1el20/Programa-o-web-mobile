@@ -38,7 +38,7 @@ export default function Home() {
 
     setScore(newScore);
 
-    if (round === 6) {
+    if (round === 5) {
       setFinished(true);
     } else {
       setRound(round + 1);
@@ -65,7 +65,7 @@ export default function Home() {
     <div className={styles.container}>
       <h1 className="text-2xl font-bold">Jogo de Dados</h1>
 
-      <p>Rodada {round} / 6</p>
+      <p>Rodada {round} / 5</p>
       <p>Placar: Jogador 1 ({score.p1}) x ({score.p2}) Jogador 2</p>
 
       <div className="flex gap-10">
@@ -111,7 +111,7 @@ export default function Home() {
             onClick={resetGame}
             className={styles.resetButton}
           >
-            Reiniciar
+            Jogar Novamente!
           </button>
         </div>
       )}
