@@ -29,7 +29,58 @@
   background-color: var(--foreground);
   padding: 120px 60px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+  min-height: 100vh;
+  gap: 24px;
+
+  background: white;
+  color: black;
+  text-align: center;
+}
+.button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #111, #333);
+  color: white;
+
+  transition: all 0.2s ease;
+}
+.button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #222, #555);
+}
+.button:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
+}
+.resetButton {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+
+  transition: all 0.2s ease;
+}
+
+.resetButton:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+}
 .intro {
   display: flex;
   flex-direction: column;

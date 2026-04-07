@@ -1,8 +1,11 @@
 "use client";
 import { useState } from "react";
-import { Dado, rollDice } from "./Components/dado";
-
+import { Dado } from "./Components/dado";
+import styles from "./page.module.css";
 export default function Home() {
+  function rollDice() {
+    return Math.floor(Math.random() * 6) + 1;
+  }
   const [player1, setPlayer1] = useState([1, 1]);
   const [player2, setPlayer2] = useState([1, 1]);
   const [turn, setTurn] = useState(1);
@@ -57,4 +60,61 @@ export default function Home() {
     setScore({ p1: 0, p2: 0 });
     setFinished(false);
   };
+
+  return (
+    <div className={styles.container}>
+      <h1 className="text-2xl font-bold">Jogo de Dados</h1>
+
+      <p>Rodada {round} / 6</p>
+      <p>Placar: Jogador 1 ({score.p1}) x ({score.p2}) Jogador 2</p>
+
+      <div className="flex gap-10">
+        <div className="flex flex-col items-center gap-2">
+          <h2>Jogador 1</h2>
+          <div className="flex gap-2">
+            <Dado value={player1[0]} />
+            <Dado value={player1[1]} />
+          </div>
+          <button
+            onClick={handleRollPlayer1}
+            disabled={turn !== 1 || finished}
+            className={styles.button}
+          >
+            Rolar (Jogador 1)
+          </button>
+        </div>
+
+        <div className="flex flex-col items-center gap-2">
+          <h2>Jogador 2</h2>
+          <div className="flex gap-2">
+            <Dado value={player2[0]} />
+            <Dado value={player2[1]} />
+          </div>
+          <button
+            onClick={handleRollPlayer2}
+            disabled={turn !== 2 || finished}
+            className={styles.button}
+          >
+            <br></br>
+            Rolar (Jogador 2)
+          </button>
+        </div>
+      </div>
+
+      {!finished && <p>Vez do Jogador {turn}</p>}
+
+      {finished && (
+        <div className="flex flex-col items-center gap-2">
+          <h2 className="text-xl font-bold">Fim de jogo!</h2>
+          <p>{getWinner()}</p>
+          <button
+            onClick={resetGame}
+            className={styles.resetButton}
+          >
+            Reiniciar
+          </button>
+        </div>
+      )}
+    </div>
+  );
 }
